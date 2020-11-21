@@ -1,0 +1,452 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Navbar */
+header {
+    display:grid;
+    grid-template-columns: 1fr 80px;
+}
+
+header figure img {
+    grid-column: 1 / span 1;
+}
+
+li {
+ list-style-type: none;
+}
+
+a.nav {
+    padding-left: 15px;
+}
+
+button img {
+ height: 100%;
+}
+
+.navbtn {
+    grid-column: 3 / span 1;
+    background-color: #fcfcfc;
+    width: 60px;
+    height: 55px;
+    border: none;
+}
+
+.navbar {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #f1f1f1;
+    width: 355px;
+    height: 420px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar a {
+    color: #35733c;;
+    text-decoration: none;
+}
+
+#nav:hover .navbar {
+    display: block;
+}
+
+button {
+    position: relative;
+    left: 5px;
+    border: none;
+    width: 30px;
+}
+
+.exhibmenu-hidden {
+    display: none;
+    position: relative;
+    left: 10px;
+    width: 400px;
+    z-index: 2;
+}
+
+.exhibmenu-hidden a {
+    display: block;
+}
+
+.exhibmenu:hover .exhibmenu-hidden {
+    display: block;
+}
+
+.visitusmenu-hidden {
+    display: none;
+    position: relative;
+    left: 10px;
+    width: 360px;
+    z-index: 2;
+}
+
+.visitusmenu-hidden a {
+    display: block;
+}
+
+.visitusmenu:hover .visitusmenu-hidden {
+    display: block;
+}
+
+.infomenu-hidden {
+    display: none;
+    position: relative;
+    left: 10px;
+    width: 360px;
+    z-index: 2;
+}
+
+.infomenu-hidden a {
+    display: block;
+}
+
+.infomenu:hover .infomenu-hidden {
+    display: block;
+}
+
+.contactmenu-hidden {
+    display: none;
+    position: relative;
+    left: 10px;
+    width: 360px;
+    z-index: 2;
+}
+
+.contactmenu-hidden a {
+    display: block;
+}
+
+.contactmenu:hover .contactmenu-hidden {
+    display: block;
+}
+
+/* Main */
+
+a {
+    text-decoration: none;
+}
+
+img.main {
+    width: 100%;
+}
+
+img.box1 {
+    display: none;
+}
+h1.top {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #35733c;;
+    font-size: 38px;
+}
+img.buylogo {
+    margin-left: 40%;
+}
+
+h2.top  {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+h3.exhibitions, h2.exhibitions, h2.shop {
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    margin-left: 30px;
+}
+p.exhibitions, p.shop, p.reading {
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    margin-left: 30px;
+    font-size: 1.1em;
+}
+h2.safe {
+    color: #35733c;;
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    margin-left: 30px; 
+    margin-top: 1px;
+    font-size: 2em;
+}
+time.safe, p.safe {
+    color: #35733c;
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    margin-left: 30px;
+    font-size: 1.1em;
+}
+
+/*  News - tourquaise box   */
+div.turquoisebox {
+    background-color: rgb(118, 190, 183);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+h3.turquoisebox, h2.turquoisebox {
+    background-color: rgb(118, 190, 183);
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    margin-left: 30px;
+}
+p.turquoisebox {
+    background-color: rgb(118, 190, 183);
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    margin-left: 30px;
+    font-size: 1.1em;
+}
+/* quotes */
+
+p.quote-text {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 1.1em;
+
+}
+p.quote-name {
+    color: #35733c;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+/* red logos */
+
+div.redlogo {
+display: flex;
+justify-content: center;
+}
+a.redlogo {
+    display: inline-block;
+    border: none;
+    font-family: cursive;
+    width: 100px;
+    height: 100px;
+    padding-top: 18px;
+    text-align: center;
+    font-size: 40px;
+    margin: 4px 2px;
+    color: white;
+    background-color: tomato;
+    border-radius: 50%;
+}
+p.redlogo {
+    display: inline-block;
+    border: none;
+    font-family: cursive;
+    width: 100px;
+    height: 100px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 27px;
+    margin: 4px 2px;
+    color: white;
+    background-color: tomato;
+    border-radius: 50%;
+}
+    /* eye boxes */ 
+
+div.eyebox.news, div.eyebox.exhib {
+    display: inline-flex;
+    background-color: rgb(54,54,54);
+    width: 100%;
+    justify-content: space-around;
+}
+h2.eyebox {
+    display: inline-flex;
+    color: white;
+    font-size: 36px;
+    width: 50%;
+    background-color: rgb(54,54,54);
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+figure.foot {
+display: block;
+align-items: center;
+justify-content: center;
+margin-left: 30%;
+}
+
+/*  green boxes  */
+div.greenbox {
+    background-color: #35733c;
+    color: white;
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: center;
+    font-size: 1em;
+}
+
+section.foot.greenbox {
+    background-color: #35733c;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    align-items: flex-start;
+}
+
+address {
+    color: white;
+    background-color: #35733c;
+    margin: 35px;
+    width: 185px;
+}
+
+li.foot a, h4.foot a {
+    color: white;
+    display: table;
+    justify-items: start;
+    vertical-align: top;
+    background-color: #35733c;
+    width: 185px;
+
+}
+/* For phones: */
+
+@media all and (max-width: 568px) {
+
+}
+
+
+
+  /* For tablets: */
+
+@media all and (min-width: 569px) and (max-width: 1024px) {
+
+    img.box1 {
+        display: inline-flex;
+        width: 50%;
+        height: 50%;
+        padding-top: 10%;
+    }
+    div.exhibitions {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        margin-inline-end: 20px;
+    } 
+
+
+img.box2 {
+    display: inline-flex;
+    width: 60%;
+    height: auto;
+    margin-left: 30px;
+}
+article.exhibitions.observatory {
+    display: inline-flex;
+    width: 95%;
+    height: 250px;
+
+}
+
+/* safe events*/
+img.box3 {
+    display: inline-flex;
+    width: 110%;
+    height: auto;
+    align-self: start;
+    margin-top: 5%;
+
+}
+article.exhibitions.events {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    width: 87%;
+    height: 250px;
+}
+
+/* shop and reading room */
+img.shop, img.readingroom {
+    display: inline-flex;
+    width: 40%;
+    height: auto;
+}
+div.shop, section.readingroom {
+    display: inline-flex;
+}
+}
+
+
+  /* For desktop: */
+ 
+ @media all and (min-width:1025px) {
+    img.box1 {
+        display: inline-flex;
+        width: 50%;
+        height: 50%;
+        padding-top: 10%;
+    }
+    div.exhibitions {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        margin-inline-end: 20px;
+    } 
+
+
+img.box2 {
+    display: inline-flex;
+    width: 60%;
+    height: auto;
+    margin-left: 30px;
+}
+article.exhibitions.observatory {
+    display: inline-flex;
+    width: 95%;
+    height: 250px;
+
+}
+
+/* safe events*/
+img.box3 {
+    display: inline-flex;
+    width: 110%;
+    height: auto;
+    align-self: start;
+    margin-top: 5%;
+
+}
+article.exhibitions.events {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    width: 87%;
+    height: 250px;
+}
+
+/* shop and reading room */
+img.shop, img.readingroom {
+    display: inline-flex;
+    width: 40%;
+    height: auto;
+}
+div.shop, section.readingroom {
+    display: inline-flex;
+}
+ }
+
+
+
